@@ -1,3 +1,14 @@
+(function ($) {
+    "use strict";
+      $('.sakura-falling').sakura();
+})(jQuery);
+
+
+$(document).on('click', function(){
+    document.getElementById("my_audio").play();
+    console.log('Jewel & Nidhi Wedding');
+});
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
