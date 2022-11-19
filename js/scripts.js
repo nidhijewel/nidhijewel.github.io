@@ -187,7 +187,7 @@ $(document).ready(function () {
             title: "Jewel and Nidhi's Wedding",
 
             // Event start date
-            start: new Date('Jan 05, 2023 17:00'),
+            start: new Date('Jan 05, 2023 15:00'),
 
             // Event duration (IN MINUTES)
             // duration: 300,
@@ -241,7 +241,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 9.614601317839412, lng: 76.71021693487369};
+    var location = {lat: 22.5932759, lng: 88.27027720000001};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
