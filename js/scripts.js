@@ -225,15 +225,30 @@ $(document).ready(function () {
           var #invite_code ="271117";
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
    
-      /*    if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
+       if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect....'));
-        } else   */ { 
             $.post('https://script.google.com/macros/s/AKfycbw-RAR8m3enaNSreI2NdGL9YEmGk-vicm6oLsp04ClY5o-5ZYyYAtx5exi1oFdV-EJo7g/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
+                        $('#alert-wrapper').html('');
+                        $('#rsvp-modal').modal('show');
+                    } else  {
+                        $('#alert-wrapper').html('');
+                        $('#rsvp-modal').modal('show');
+                    }
+                })
+                .fail(function (data) {
+                    console.log(data);
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                });
+        } else    { 
+            $.post('https://script.google.com/macros/s/AKfycbw-RAR8m3enaNSreI2NdGL9YEmGk-vicm6oLsp04ClY5o-5ZYyYAtx5exi1oFdV-EJo7g/exec', data)
+                .done(function (data) {
+                    console.log(data);
+                    if (data.result === "error") {
+                        $('#alert-wrapper').html('');
+                        $('#rsvp-modal').modal('show');
                     } else  {
                         $('#alert-wrapper').html('');
                         $('#rsvp-modal').modal('show');
