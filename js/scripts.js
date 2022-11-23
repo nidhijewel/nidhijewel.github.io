@@ -227,7 +227,7 @@ $(document).ready(function () {
    
        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $.post('https://script.google.com/macros/s/AKfycbw-RAR8m3enaNSreI2NdGL9YEmGk-vicm6oLsp04ClY5o-5ZYyYAtx5exi1oFdV-EJo7g/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzUVeRGFcD59qM0xjECEkeelHOU5inNDuVZHVJI75Cqh7uY-XNEROLA7hXJAH9Gt2Vf/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
