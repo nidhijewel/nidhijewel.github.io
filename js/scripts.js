@@ -243,7 +243,7 @@ $(document).ready(function () {
                     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
                 });
         } else    { 
-            $.post('https://script.google.com/macros/s/AKfycbw-RAR8m3enaNSreI2NdGL9YEmGk-vicm6oLsp04ClY5o-5ZYyYAtx5exi1oFdV-EJo7g/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzUVeRGFcD59qM0xjECEkeelHOU5inNDuVZHVJI75Cqh7uY-XNEROLA7hXJAH9Gt2Vf/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
