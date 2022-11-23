@@ -227,7 +227,7 @@ $(document).ready(function () {
    
        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $.post('https://script.google.com/macros/s/AKfycbzUVeRGFcD59qM0xjECEkeelHOU5inNDuVZHVJI75Cqh7uY-XNEROLA7hXJAH9Gt2Vf/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxWzshLZqjqWVzQVPeB6PhyfzxfxSmZcVHDRmnaKv2KDBrTr6hXJvmcsgNYVYEvFd_k/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -243,7 +243,7 @@ $(document).ready(function () {
                     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
                 });
         } else    { 
-            $.post('https://script.google.com/macros/s/AKfycbzUVeRGFcD59qM0xjECEkeelHOU5inNDuVZHVJI75Cqh7uY-XNEROLA7hXJAH9Gt2Vf/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxWzshLZqjqWVzQVPeB6PhyfzxfxSmZcVHDRmnaKv2KDBrTr6hXJvmcsgNYVYEvFd_k/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
